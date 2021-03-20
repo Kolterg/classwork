@@ -1,0 +1,38 @@
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.father {
+    background: #a2a9b1;
+    height: 600px;
+    width: 600px;
+}
+
+#header {
+    background: greenyellow;
+    height: 100px;
+}
+
+.son {
+    display: flex;
+}
+
+#menu {
+    background: plum;
+    height: 400px;
+    width: 200px;
+}
+
+.post {
+    background: deepskyblue;
+    width: 400px;
+    height: 200px;
+}
+
+#footer {
+    background: lightgoldenrodyellow;
+    height: 100px;
+    width: 600px;
+}
