@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.all {
+    background: silver;
+    width: 800px;
+    height: 800px;
+
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: dodgerblue;
+    height: 150px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: steelblue;
+    height: 100px;
+}
+
+.mainAside {
+    display: flex;
+    height: 450px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: deepskyblue;
+    width: 500px;
+}
+
+.aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: mediumslateblue;
+    width: 300px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightskyblue;
+    height: 100px;
+}
