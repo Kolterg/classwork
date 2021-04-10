@@ -97,4 +97,31 @@ let n3 = '    Hermione       Granger      '
 // let n2 = 'Ron Whisley'
 // let n3 = 'Hermione Granger'
 
+function normName(name) {
+    name = name.trim();
+    for (let j = 0; j < name.length; j++) {
+        if (name[j] === ' ' && name[j + 1] === ' ') {
+            name = name.replace(' ','');
+            j = 0;
+        }
 
+    }
+    return name;
+}
+
+// console.log(normName(n3));
+
+// ******************* НАЗАД В МИНУЛЕ *********************** //
+// Створити функцію яка :
+
+// 1
+// Додає в боді блок з текстом "Hello owu".
+
+let blokHello = () => {
+    const divHello = document.createElement;
+    divHello.innerText = 'Hello owu';
+    divHello.appendChild(body);
+}
+
+// 2
+// Додає в боді елемент з текстом . Тип елементу та текст отримати через аргументи.
