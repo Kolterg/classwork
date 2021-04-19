@@ -128,37 +128,41 @@ blockHello();
 // 2
 // Додає в боді елемент з текстом. Тип елементу та текст отримати через аргументи.
 
-function newEl(tipe, text) {
-    const element = document.createElement(`${tipe}`);
+function newEl(type, text) {
+    const element = document.createElement(`${type}`);
     element.innerHTML = `${text}`;
     document.body.appendChild(element);
 }
 
-let tipe = 'h1';
+let type = 'h1';
 let text = 'Hello world';
 
-newEl(tipe, text);
+newEl(type, text);
 
-// 3 ???
-// Приймає масив автомобілів (можна взяти з попередніх дз ),
+// 3
+// Приймає масив автомобілів (можна взяти з попередніх дз),
 // та індентифікатор елемнту в який потрібно додати список цих автомобілів.
 // Для кожного автомобіля створити свій блок, та додати його в елемент,
-// індентифікатор якого ви отримали. Всі властивості авто в обному блоці.
+// індентифікатор якого ви отримали. Всі властивості авто в одному блоці. (Які властивості???)
 
 let cars = ['Toyota', 'Nisan', 'RollsRoys', 'Hunday', 'Pegot', 'Chevrolet', 'Ford', 'Ferrary'];
-let id;
+let id = document.body;
 
 function blockOfCars(cars, id) {
     for (let j = 0; j < cars.length; j++) {
         const car = document.createElement('div');
-        car.innerHTML = `${car[j]}`;
+        car.innerHTML = `${cars[j]}`;
         id.appendChild(car);
     }
 }
+
+blockOfCars(cars, id);
 
 // 4 ???
 // Приймає масив автомобілів (можна взяти з попередніх дз ),
 // та індентифікатор елемнту в який потрібно додати список цих автомобілів.
 // Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
 // Для кожної властивості створити всередені блока автомоблія свій блок.
+
+
 
